@@ -3,6 +3,16 @@
   font-family: Nunito Sans;
 }
 
+.camping__video {
+  max-width: 350px;
+  max-height: 400px;
+}
+
+.camping__photo {
+  max-width: 350px;
+  max-height: 400px;
+}
+
 .main__title_first {
   margin-bottom: 0.4rem;
   color: #F2BE22;
