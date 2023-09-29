@@ -325,9 +325,11 @@ template {
 
 .start {
   background-image: url(../images/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #1a3e3e;
   height: 100vh;
-  max-width: 100vw;
 }
 
 .start__info_title {
