@@ -319,15 +319,6 @@ template {
   src: url(../fonts/NunitoSans_Regular.woff2) format("woff2"), url(../fonts/NunitoSans_Regular.woff) format("woff");
   font-weight: 400;
 }
-* {
-  box-sizing: border-box;
-  font-size: 18px;
-}
-
-.root {
-  margin: 0 20.5rem;
-}
-
 .start {
   background-image: url(../images/header.jpg);
   height: 100vh;
