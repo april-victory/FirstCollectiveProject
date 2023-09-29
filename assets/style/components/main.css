@@ -1,0 +1,22 @@
+.camping {
+  display: block;
+  font-family: Nunito Sans;
+}
+
+.main__title_first {
+  margin-bottom: 0.4rem;
+  color: #F2BE22;
+  font-size: 1.3rem;
+}
+
+.main__title_second {
+  font-size: 2rem;
+}
+
+.top-left_bottom-right {
+  border-radius: 0 50px;
+}
+
+.top-right_bottom-left {
+  border-radius: 50px 0;
+}/*# sourceMappingURL=main.css.map */
