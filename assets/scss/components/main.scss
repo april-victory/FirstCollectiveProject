@@ -1,45 +1,290 @@
+
 // Начало блока 1 Екатерины
 .camping {
-  display: block;
-  font-family: Nunito Sans;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+  gap: 15px;
 }
 
-.camping__video {
-  max-width: 350px;
-  max-height: 400px;
+.camping__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+  gap: 15px;
 }
 
-.camping__photo {
-  max-width: 350px;
-  max-height: 400px;
+.camping__media {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin-right: 6.6rem;
 }
+
+.media__video-frame {
+  position: relative;
+  margin: -274px 0 0 130px;
+}
+
+.media__photo-frame {
+display: block;
+}
+
+.media {
+  width: 350px;
+  height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 1.3rem;
+}
+
+.play__button {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(253,253,253,.6);
+  transition: all .3s;
+  will-change: transform;
+  cursor: pointer;
+}
+
 
 .main__title_first {
-  margin-bottom: 0.4rem;
-  color: #f2be22;
+  margin-bottom: 0.4rem;  
+  color: #F2BE22;
   font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .main__title_second {
   font-size: 2rem;
+  font-weight: 800; 
+}
+
+.camping__button {
+  width: 200px;
+  height: 52px;
 }
 // Конец блока 1 Екатерины
 
 // Начало блока 2 Екатерины
+.offer {
+  background-color: #f3f5f4;
+}
+
+.offer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+  gap: 15px;
+}
+
+.description {
+  flex: 1;
+  max-width: 580px;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  gap: 40px;
+}
+
+.advantages-title {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: #18121e;
+}
+
+.offer__photo {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 3.7rem;
+  font-size: 1.3rem;
+}
+
+.advantages__item:nth-of-type(1)::before {
+  background-image: url(/assets/icons/block2_svg1.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages__item:nth-of-type(2)::before {
+  background-image: url(/assets/icons/block2_svg2.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages__item:nth-of-type(3)::before {
+  background-image: url(/assets/icons/block2_svg3.svg);
+  background-repeat: no-repeat;
+}
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+
+.offer__button {
+  width: 236px;
+  height: 52px;
+}
+
 .top-left_bottom-right {
-  border-radius: 0 50px;
+border-radius: 0 50px;
 }
 
 .top-right_bottom-left {
-  border-radius: 50px 0;
+border-radius: 50px 0;
+}
+
+.offer__photo {
+  display: grid;
+  grid-template: repeat(2, 255px)/repeat(2, 255px);
+  gap: 10px;
+  max-width: 510px;
+}
+
+.offer__photo-item {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.item_1 {
+  grid-area: 1/1/1/1;
+}
+
+.item_2 {
+  grid-area: 1/2/1/2;
+}
+
+.item_3 {
+  grid-area: 2/1/2/1;
+}
+
+.item_4 {
+  grid-area: 2/2/2/2;
 }
 
 // Конец блока 2 Екатерины
 
 // Начало блока 4 Екатерины
-.blog__title {
+.impression {
+  padding: 5.6rem 0;
+  background-color: #f3f5f4;
 }
 
-.blog__text {
+.blog__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin-bottom: 2.8rem;
+}
+
+.news {
+  display: flex;
+  flex: 1 1 380px;
+  border-radius: 10px;
+  padding: 16px;
+  height: auto;
+  box-shadow: 0 0 15px 0 rgba(24,18,30,.12);
+  background: #fdfdfd;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.news__content {
+  display: flex;
+  flex: 1 1 294px;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.news__img {
+  border-radius: 6px;
+  width: 230px;
+  height: 280px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.news__title {
+  margin: 0;
+  padding: 1.1rem 0 1.3rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: underline 1px solid rgba(0,0,0,0);
+  color: #18121e;
+  transition: all .1s;
+  cursor: pointer;
+  text-underline-offset: 3px;
+}
+
+.news__text {
+  margin: 0;
+  margin-bottom: 1.3rem;
+  font-size:  .8rem;
+  color: #18121e;
+}
+
+.news__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 0 16px;
+}
+
+.news__date {
+  font-weight: 700;
+  font-size:  .8rem;
+  color: #f2be22;
+}
+
+.news__link {
+  font-weight: 700;
+  font-size:  .8rem;
+  -webkit-text-decoration: underline 1px solid rgba(0,0,0,0);
+  text-decoration: underline 1px solid rgba(0,0,0,0);
+  color: #1a3e3e;
+  transition: all .1s;
+}
+
+.blog__button {
+margin: 0 auto;
+width: 220px;
+height: 52px;
 }
 // Конец блока 4 Екатерины
