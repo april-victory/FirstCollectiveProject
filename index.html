@@ -1,228 +1,287 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="icon" href="./assets/icons/header_logo.svg" type="icon/svg" />
+    <title>РумТибет</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/style/style.css" />
-  <link rel="icon" href="./assets/icons/header_logo.svg" type="icon/svg" />
-  <title>РумТибет</title>
-</head>
-
-<body>
-  <!-- Начало блока header Виктории -->
-  <section class="start">
-    <div class="container">
-      <header class="header" id="header">
-        <img src="./assets/icons/header_logo.svg" alt="logo" class="logo" />
-        <nav class="header__nav">
-          <ul class="header__">
-            <li><a href="#header" class="link">Главная</a></li>
-            <li><a href="#guide" class="link">Про гида</a></li>
-            <li><a href="#program" class="link">Программа тура</a></li>
-            <li><a href="#price" class="link">Стоимость</a></li>
-            <li><a href="#blog" class="link">Блог</a></li>
-            <li><a href="#contact" class="link">Контакты</a></li>
-          </ul>
-          <a href="#" class="button">Консультация</a>
-        </nav>
-        <button class="burger-menu"></button>
-      </header>
-      <div class="start__info">
-        <h1 class="start__info_title">
-          Насладись прогулкой в горах с командой единомышленников
-        </h1>
-      </div>
-    </div>
-  </section>
-  <!-- Конец блока header Виктории -->
-
-  <!-- Начало блока main (дальше разбивка по блокам Ксении, Екатерины и Виктории) -->
-  <main class="main">
-    <!-- Начало блока 1 Екатерины -->
-    <section class="camping">
+  <body>
+    <!-- Начало блока header Виктории -->
+    <section class="start">
       <div class="container">
-        <div class="camping__wrapper">
-          <div class="camping__media">
-            <div class="media__photo-frame">
-              <img class="media" src="/assets/images/block1.jpg" alt="photo">
-            </div>
-            <div class="media__video-frame">
-              <video class="media" src="/assets/video/block1_video.mp4"></video>
-              <div class="play__button">
-                <img src="/assets/icons/block1_button-play.svg" alt="button-play">
-              </div>
-            </div>
-          </div>
-          <div class="description">
-            <h2 class="main__title_first">о нашем походе</h2>
-            <p class="main__title_second">Исследуйте все горные массивы мира вместе с нами
-            </p>
-            <p class="main__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более
-              двух
-              тысячелетий назад.
-              Ричард
-              МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных
-              слов
-              в
-              Lorem
-              Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
-            </p>
-            <button class="button camping__button">Программа тура</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Конец блока 1 Екатерины -->
-
-    <!-- Начало блока 2 Екатерины -->
-    <section class="offer">
-      <div class="container">
-        <div class="offer__wrapper">
-          <div class="description">
-            <h2 class="main__title_first">наше предложение</h2>
-            <p class="main__title_second">Лучшие программы для тебя</p>
-            <p class="main__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более
-              двух
-              тысячелетий назад.
-              Ричард МакКлинток, профессор латыни из колледжа.
-            </p>
-            <ul class="advantages">
-              <li class="advantages__item">
-                <span class="advantages-title">Опытный гид</span>
-                <span>Для современного мира базовый вектор развития предполагает независимые способы реализации
-                  соответствующих
-                  условий активизации.</span>
-              </li>
-              <li class="advantages__item ">
-                <span class="advantages-title">Безопасный поход</span>
-                <span>Для современного мира базовый вектор развития предполагает независимые способы реализации
-                  соответствующих
-                  условий активизации.</span>
-              </li>
-              <li class="advantages__item">
-                <span class="advantages-title">Лояльные цены</span>
-                <span>Для современного мира базовый вектор развития предполагает независимые способы реализации
-                  соответствующих
-                  условий активизации.</span>
-              </li>
+        <header class="header" id="header">
+          <img src="./assets/icons/header_logo.svg" alt="logo" class="logo" />
+          <nav class="header__nav">
+            <ul class="header__">
+              <li><a href="#header" class="link">Главная</a></li>
+              <li><a href="#guide" class="link">Про гида</a></li>
+              <li><a href="#program" class="link">Программа тура</a></li>
+              <li><a href="#price" class="link">Стоимость</a></li>
+              <li><a href="#blog" class="link">Блог</a></li>
+              <li><a href="#contact" class="link">Контакты</a></li>
             </ul>
-            <button class="button offer__button">Стоимость программ</button>
-          </div>
-          <div class="offer__photo">
-            <img class="offer__photo-item item_1 top-left_bottom-right" src="/assets/images/block2_pic1.jpg" alt="pic1">
-            <img class="offer__photo-item item_2 top-right_bottom-left" src="/assets/images/block2_pic2.jpg" alt="pic2">
-            <img class="offer__photo-item item_3 top-right_bottom-left" src="/assets/images/block2_pic3.jpg" alt="pic3">
-            <img class="offer__photo-item item_4 top-left_bottom-right" src="/assets/images/block2_pic4.jpg" alt="pic4">
-          </div>
+            <a href="#" class="button">Консультация</a>
+          </nav>
+          <button class="burger-menu">
+            <nav role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                  <li><a href="#header" class="link">Главная</a></li>
+                  <li><a href="#guide" class="link">Про гида</a></li>
+                  <li><a href="#program" class="link">Программа тура</a></li>
+                  <li><a href="#price" class="link">Стоимость</a></li>
+                  <li><a href="#blog" class="link">Блог</a></li>
+                  <li><a href="#contact" class="link">Контакты</a></li>
+                </ul>
+              </div>
+            </nav>
+          </button>
+        </header>
+        <div class="start__info">
+          <h1 class="start__info_title">
+            Насладись прогулкой в горах с командой единомышленников
+          </h1>
         </div>
       </div>
     </section>
-    <!-- Конец блока 2 Екатерины -->
+    <!-- Конец блока header Виктории -->
 
-    <!-- Начало блока 3 Виктории -->
-    <div class="popular"></div>
-    <!-- Конец блока 3 Виктории -->
-
-    <!-- Начало блока 4 Екатерины -->
-    <section class="impression">
-      <div class="container">
-        <h2 class="main__title_first">делимся впечатлениями</h2>
-        <p class="main__title_second">Блог о путешествиях
-        </p>
-        <p class="main__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух
-          тысячелетий назад.
-          Ричард
-          акКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
-          Lorem
-          Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
-        </p>
-        <div class="blog__wrapper">
-          <div class="blog">
-            <article class="news">
-              <img class="news__img" src="/assets/images/block4_pic1.jpg" alt="pic1">
-              <div class="news__content">
-                <p class="news__title">
-                  Красивая Италя, какая она в реальности?
-                  </pmain__text>
-                <p class="news__text">
-                  Для современного мира базовый вектор развития предполагает независимые способы реализации
-                  соответствующих
-                  условий активизации.
-                </p>
-                <div class="news__info">
-                  <span class="news__date">01/04/2023</span>
-                  <a class="news__link" href="#">читать статью</a>
+    <!-- Начало блока main (дальше разбивка по блокам Ксении, Екатерины и Виктории) -->
+    <main class="main">
+      <!-- Начало блока 1 Екатерины -->
+      <section class="camping">
+        <div class="container">
+          <div class="camping__wrapper">
+            <div class="camping__media">
+              <div class="media__photo-frame">
+                <img
+                  class="media"
+                  src="/assets/images/block1.jpg"
+                  alt="photo"
+                />
+              </div>
+              <div class="media__video-frame">
+                <video
+                  class="media"
+                  src="/assets/video/block1_video.mp4"
+                ></video>
+                <div class="play__button">
+                  <img
+                    src="/assets/icons/block1_button-play.svg"
+                    alt="button-play"
+                  />
                 </div>
               </div>
-            </article>
-            <article class="news">
-              <img class="news__img" src="/assets/images/block4_pic2.jpg" alt="pic2">
-              <div class="news__content">
-                <p class="news__title">
-                  Долой сомнения! Весь мир открыт для вас!
-                </p>
-                <p class="news__text">
-                  Для современного мира базовый вектор развития предполагает независимые способы реализации
-                  соответствующих
-                  условий активизации ... независимые способы реализации соответствующих усл...
-                </p>
-                <div class="news__info">
-                  <span class="news__date">01/04/2023</span>
-                  <a class="news__link" href="#">читать статью</a>
-                </div>
-              </div>
-            </article>
-            <article class="news">
-              <img class="news__img" src="/assets/images/block4_pic3.jpg" alt="pic3">
-              <div class="news__content">
-                <p class="news__title">
-                  Как подготовиться к путешествию в одиночку?
-                </p>
-                <p class="news__text">
-                  Для современного мира базовый вектор развития предполагает.
-                </p>
-                <div class="news__info">
-                  <span class="news__date">01/04/2023</span>
-                  <a class="news__link" href="#">читать статью</a>
-                </div>
-              </div>
-            </article>
-            <article class="news">
-              <img class="news__img" src="/assets/images/block4_pic4.jpg" alt="pic4">
-              <div class="news__content">
-                <p class="news__title">
-                  Индия ... летим?
-                </p>
-                <p class="news__text">
-                  Для современного мира базовый.
-                </p>
-                <div class="news__info">
-                  <span class="news__date">01/04/2023</span>
-                  <a class="news__link" href="#">читать статью</a>
-                </div>
-              </div>
-            </article>
+            </div>
+            <div class="description">
+              <h2 class="main__title_first">о нашем походе</h2>
+              <p class="main__title_second">
+                Исследуйте все горные массивы мира вместе с нами
+              </p>
+              <p class="main__text">
+                Его корни уходят в один фрагмент классической латыни 45 года
+                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
+                профессор латыни из колледжа Hampden-Sydney, штат Вирджиния,
+                взял одно из самых странных слов в Lorem Ipsum, "consectetur"и
+                занялся его поисками в классической латинской литературе.
+              </p>
+              <button class="button camping__button">Программа тура</button>
+            </div>
           </div>
         </div>
-        <button class="button blog__button">Другие материалы</button>
-      </div>
-    </section>
-    <!-- Конец блока 4 Екатерины -->
+      </section>
+      <!-- Конец блока 1 Екатерины -->
 
-    <!-- Начало блока 5 Ксении -->
+      <!-- Начало блока 2 Екатерины -->
+      <section class="offer">
+        <div class="container">
+          <div class="offer__wrapper">
+            <div class="description">
+              <h2 class="main__title_first">наше предложение</h2>
+              <p class="main__title_second">Лучшие программы для тебя</p>
+              <p class="main__text">
+                Его корни уходят в один фрагмент классической латыни 45 года
+                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
+                профессор латыни из колледжа.
+              </p>
+              <ul class="advantages">
+                <li class="advantages__item">
+                  <span class="advantages-title">Опытный гид</span>
+                  <span
+                    >Для современного мира базовый вектор развития предполагает
+                    независимые способы реализации соответствующих условий
+                    активизации.</span
+                  >
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages-title">Безопасный поход</span>
+                  <span
+                    >Для современного мира базовый вектор развития предполагает
+                    независимые способы реализации соответствующих условий
+                    активизации.</span
+                  >
+                </li>
+                <li class="advantages__item">
+                  <span class="advantages-title">Лояльные цены</span>
+                  <span
+                    >Для современного мира базовый вектор развития предполагает
+                    независимые способы реализации соответствующих условий
+                    активизации.</span
+                  >
+                </li>
+              </ul>
+              <button class="button offer__button">Стоимость программ</button>
+            </div>
+            <div class="offer__photo">
+              <img
+                class="offer__photo-item item_1 top-left_bottom-right"
+                src="/assets/images/block2_pic1.jpg"
+                alt="pic1"
+              />
+              <img
+                class="offer__photo-item item_2 top-right_bottom-left"
+                src="/assets/images/block2_pic2.jpg"
+                alt="pic2"
+              />
+              <img
+                class="offer__photo-item item_3 top-right_bottom-left"
+                src="/assets/images/block2_pic3.jpg"
+                alt="pic3"
+              />
+              <img
+                class="offer__photo-item item_4 top-left_bottom-right"
+                src="/assets/images/block2_pic4.jpg"
+                alt="pic4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Конец блока 2 Екатерины -->
 
-    <!-- Конец блока 5 Ксении -->
+      <!-- Начало блока 3 Виктории -->
+      <div class="popular"></div>
+      <!-- Конец блока 3 Виктории -->
 
-    <!-- Начало формы Виктории -->
-    <div class="subscription"></div>
-    <!-- Конец формы Виктории -->
-  </main>
-  <!-- Конец блока main -->
+      <!-- Начало блока 4 Екатерины -->
+      <section class="impression">
+        <div class="container">
+          <h2 class="main__title_first">делимся впечатлениями</h2>
+          <p class="main__title_second">Блог о путешествиях</p>
+          <p class="main__text">
+            Его корни уходят в один фрагмент классической латыни 45 года н.э.,
+            то есть более двух тысячелетий назад. Ричард акКлинток, профессор
+            латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
+            самых странных слов в Lorem Ipsum, "consectetur"и занялся его
+            поисками в классической латинской литературе.
+          </p>
+          <div class="blog__wrapper">
+            <div class="blog">
+              <article class="news">
+                <img
+                  class="news__img"
+                  src="/assets/images/block4_pic1.jpg"
+                  alt="pic1"
+                />
+                <div class="news__content">
+                  <p class="news__title">
+                    Красивая Италя, какая она в реальности?
+                  </p>
+                  <p class="news__text">
+                    Для современного мира базовый вектор развития предполагает
+                    независимые способы реализации соответствующих условий
+                    активизации.
+                  </p>
+                  <div class="news__info">
+                    <span class="news__date">01/04/2023</span>
+                    <a class="news__link" href="#">читать статью</a>
+                  </div>
+                </div>
+              </article>
+              <article class="news">
+                <img
+                  class="news__img"
+                  src="/assets/images/block4_pic2.jpg"
+                  alt="pic2"
+                />
+                <div class="news__content">
+                  <p class="news__title">
+                    Долой сомнения! Весь мир открыт для вас!
+                  </p>
+                  <p class="news__text">
+                    Для современного мира базовый вектор развития предполагает
+                    независимые способы реализации соответствующих условий
+                    активизации ... независимые способы реализации
+                    соответствующих усл...
+                  </p>
+                  <div class="news__info">
+                    <span class="news__date">01/04/2023</span>
+                    <a class="news__link" href="#">читать статью</a>
+                  </div>
+                </div>
+              </article>
+              <article class="news">
+                <img
+                  class="news__img"
+                  src="/assets/images/block4_pic3.jpg"
+                  alt="pic3"
+                />
+                <div class="news__content">
+                  <p class="news__title">
+                    Как подготовиться к путешествию в одиночку?
+                  </p>
+                  <p class="news__text">
+                    Для современного мира базовый вектор развития предполагает.
+                  </p>
+                  <div class="news__info">
+                    <span class="news__date">01/04/2023</span>
+                    <a class="news__link" href="#">читать статью</a>
+                  </div>
+                </div>
+              </article>
+              <article class="news">
+                <img
+                  class="news__img"
+                  src="/assets/images/block4_pic4.jpg"
+                  alt="pic4"
+                />
+                <div class="news__content">
+                  <p class="news__title">Индия ... летим?</p>
+                  <p class="news__text">Для современного мира базовый.</p>
+                  <div class="news__info">
+                    <span class="news__date">01/04/2023</span>
+                    <a class="news__link" href="#">читать статью</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="button blog__button">Другие материалы</button>
+        </div>
+      </section>
+      <!-- Конец блока 4 Екатерины -->
 
-  <!-- Начало блока footer Юлии -->
-  <footer class="footer"></footer>
-  <!-- Конец блока footer Юлии -->
-</body>
+      <!-- Начало блока 5 Ксении -->
 
+      <!-- Конец блока 5 Ксении -->
+
+      <!-- Начало формы Виктории -->
+      <div class="subscription"></div>
+      <!-- Конец формы Виктории -->
+    </main>
+    <!-- Конец блока main -->
+
+    <!-- Начало блока footer Юлии -->
+    <footer class="footer"></footer>
+    <!-- Конец блока footer Юлии -->
+  </body>
 </html>
