@@ -187,6 +187,13 @@
 
 // Конец блока 2 Екатерины
 
+// Начало блока 3 Виктории
+// .rating__number::before {
+//   background-image: url(./assets/icons/block3_star.svg);
+//   content: url(./assets/icons/block3_star.svg);
+// }
+//Конец блокак 3 Виктории
+
 // Начало блока 4 Екатерины
 .impression {
   padding: 5.6rem 0;
@@ -285,3 +292,9 @@
   height: 52px;
 }
 // Конец блока 4 Екатерины
+
+//Начало формы Виктории
+.subscription__link {
+  text-decoration: underline;
+}
+//Конец формы Виктории
