@@ -1,4 +1,3 @@
-
 // Начало блока 1 Екатерины
 .camping {
   display: flex;
@@ -29,7 +28,7 @@
 }
 
 .media__photo-frame {
-display: block;
+  display: block;
 }
 
 .media {
@@ -51,23 +50,22 @@ display: block;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  background-color: rgba(253,253,253,.6);
-  transition: all .3s;
+  background-color: rgba(253, 253, 253, 0.6);
+  transition: all 0.3s;
   will-change: transform;
   cursor: pointer;
 }
 
-
 .main__title_first {
-  margin-bottom: 0.4rem;  
-  color: #F2BE22;
+  margin-bottom: 0.4rem;
+  color: $yellow;
   font-size: 1.3rem;
   font-weight: 400;
 }
 
 .main__title_second {
   font-size: 2rem;
-  font-weight: 800; 
+  font-weight: 800;
 }
 
 .camping__button {
@@ -78,7 +76,7 @@ display: block;
 
 // Начало блока 2 Екатерины
 .offer {
-  background-color: #f3f5f4;
+  background-color: $light-grey;
 }
 
 .offer__wrapper {
@@ -107,7 +105,7 @@ display: block;
   display: block;
   margin-bottom: 4px;
   font-weight: 700;
-  color: #18121e;
+  color: $black;
 }
 
 .offer__photo {
@@ -145,23 +143,22 @@ display: block;
   height: 2.8rem;
 }
 
-
 .offer__button {
   width: 236px;
   height: 52px;
 }
 
 .top-left_bottom-right {
-border-radius: 0 50px;
+  border-radius: 0 50px;
 }
 
 .top-right_bottom-left {
-border-radius: 50px 0;
+  border-radius: 50px 0;
 }
 
 .offer__photo {
   display: grid;
-  grid-template: repeat(2, 255px)/repeat(2, 255px);
+  grid-template: repeat(2, 255px) / repeat(2, 255px);
   gap: 10px;
   max-width: 510px;
 }
@@ -193,7 +190,7 @@ border-radius: 50px 0;
 // Начало блока 4 Екатерины
 .impression {
   padding: 5.6rem 0;
-  background-color: #f3f5f4;
+  background-color: $light-grey;
 }
 
 .blog__wrapper {
@@ -220,8 +217,8 @@ border-radius: 50px 0;
   border-radius: 10px;
   padding: 16px;
   height: auto;
-  box-shadow: 0 0 15px 0 rgba(24,18,30,.12);
-  background: #fdfdfd;
+  box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+  background: $white;
   transform: translateZ(0);
   backface-visibility: hidden;
 }
@@ -246,9 +243,9 @@ border-radius: 50px 0;
   padding: 1.1rem 0 1.3rem;
   font-weight: 700;
   font-size: 1.3rem;
-  text-decoration: underline 1px solid rgba(0,0,0,0);
-  color: #18121e;
-  transition: all .1s;
+  text-decoration: underline 1px solid rgba(0, 0, 0, 0);
+  color: $black;
+  transition: all 0.1s;
   cursor: pointer;
   text-underline-offset: 3px;
 }
@@ -256,8 +253,8 @@ border-radius: 50px 0;
 .news__text {
   margin: 0;
   margin-bottom: 1.3rem;
-  font-size:  .8rem;
-  color: #18121e;
+  font-size: 0.8rem;
+  color: $black;
 }
 
 .news__info {
@@ -269,22 +266,22 @@ border-radius: 50px 0;
 
 .news__date {
   font-weight: 700;
-  font-size:  .8rem;
-  color: #f2be22;
+  font-size: 0.8rem;
+  color: $yellow;
 }
 
 .news__link {
   font-weight: 700;
-  font-size:  .8rem;
-  -webkit-text-decoration: underline 1px solid rgba(0,0,0,0);
-  text-decoration: underline 1px solid rgba(0,0,0,0);
-  color: #1a3e3e;
-  transition: all .1s;
+  font-size: 0.8rem;
+  -webkit-text-decoration: underline 1px solid rgba(0, 0, 0, 0);
+  text-decoration: underline 1px solid rgba(0, 0, 0, 0);
+  color: $dark-green;
+  transition: all 0.1s;
 }
 
 .blog__button {
-margin: 0 auto;
-width: 220px;
-height: 52px;
+  margin: 0 auto;
+  width: 220px;
+  height: 52px;
 }
 // Конец блока 4 Екатерины
