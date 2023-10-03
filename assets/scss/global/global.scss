@@ -28,6 +28,11 @@
   cursor: pointer;
 }
 
+.button:hover {
+color: $dark-green;
+background: $white;
+}
+
 a {
   text-decoration: none;
 }
