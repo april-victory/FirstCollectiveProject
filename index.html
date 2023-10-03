@@ -12,118 +12,77 @@
     <!-- Начало блока header Виктории -->
     <section class="start">
       <div class="container">
-        <div class="start__wrapper">
-          <header class="header">
-            <img
-              src="./assets/icons/header_logo.svg"
-              alt="logo"
-              class="header__logo"
-            />
-            <nav class="header__nav">
-              <ul class="header__nav_items">
-                <li><a href="#header">Главная</a></li>
-                <li><a href="#guide">Про гида</a></li>
-                <li><a href="#program">Программа тура</a></li>
-                <li><a href="#price">Стоимость</a></li>
-                <li><a href="#blog">Блог</a></li>
-                <li><a href="#contact">Контакты</a></li>
-              </ul>
-              <a href="#" class="header__button button">Консультация</a>
+        <header class="header">
+          <img src="./assets/icons/header_logo.svg" alt="logo" class="logo" />
+          <nav class="header__nav">
+            <ul class="header__">
+              <li><a href="#header" class="link">Главная</a></li>
+              <li><a href="#guide" class="link">Про гида</a></li>
+              <li><a href="#program" class="link">Программа тура</a></li>
+              <li><a href="#price" class="link">Стоимость</a></li>
+              <li><a href="#blog" class="link">Блог</a></li>
+              <li><a href="#contact" class="link">Контакты</a></li>
+            </ul>
+            <a href="#" class="button">Консультация</a>
+          </nav>
+          <button class="burger-menu">
+            <nav role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                  <li><a href="#header" class="link">Главная</a></li>
+                  <li><a href="#guide" class="link">Про гида</a></li>
+                  <li><a href="#program" class="link">Программа тура</a></li>
+                  <li><a href="#price" class="link">Стоимость</a></li>
+                  <li><a href="#blog" class="link">Блог</a></li>
+                  <li><a href="#contact" class="link">Контакты</a></li>
+                </ul>
+              </div>
             </nav>
-            <nav class="header__burger">
-              <input type="checkbox" class="header__burger_checkbox" />
-              <span class="header__burger_line"></span>
-              <span class="header__burger_line"></span>
-              <span class="header__burger_line"></span>
-              <ul class="header__burger_menu">
-                <li><a href="#header">Главная</a></li>
-                <li><a href="#guide">Про гида</a></li>
-                <li><a href="#program">Программа тура</a></li>
-                <li><a href="#price">Стоимость</a></li>
-                <li><a href="#blog">Блог</a></li>
-                <li><a href="#contact">Контакты</a></li>
-              </ul>
-            </nav>
-          </header>
-          <div class="start__info">
-            <h1 class="start__info_title">
-              Насладись прогулкой в горах <br />
-              с командой единомышленников
-            </h1>
-            <form
-              action="ссылка на обработчик"
-              method="POST"
-              class="start__form"
-            >
-              <div class="start__choice">
-                <select id="type-travel" class="strat__choice_wrapper">
-                  <option class="strat__choice_color" value="location" selected>
-                    Локция для тура
-                  </option>
-                  <option class="strat__choice_color" value="GreatBritain">
-                    Великобритания
-                  </option>
-                  <option class="strat__choice_color" value="USA">США</option>
-                  <option class="strat__choice_color" value="Russia">
-                    Россия
-                  </option>
-                  <option class="strat__choice_color" value="SouthAfrica">
-                    ЮАР
-                  </option>
-                  <option class="strat__choice_color" value="Thailand">
-                    Тайланд
-                  </option>
-                  <option class="strat__choice_color" value="Iceland">
-                    Исландия
-                  </option>
-                </select>
-                <label for="type-travel" class="start__choice_label"
-                  >выберите из списка</label
-                >
-              </div>
-              <div class="start__choice">
-                <div class="strat__choice_wrapper">
-                  <input
-                    type="date"
-                    id="date-start"
-                    class="strat__choice_date"
-                  />
-                  <input type="date" id="date-end" class="strat__choice_date" />
-                </div>
-                <label for="date" class="start__choice_label"
-                  >укажите диапазон</label
-                >
-              </div>
-              <div class="start__choice">
-                <select id="people" class="strat__choice_wrapper">
-                  <option
-                    class="strat__choice_color"
-                    value="participant"
-                    selected
-                  >
-                    Участники
-                  </option>
-                  <option class="strat__choice_color" value="4">4</option>
-                  <option class="strat__choice_color" value="5">5</option>
-                  <option class="strat__choice_color" value="6">6</option>
-                  <option class="strat__choice_color" value="7">7</option>
-                  <option class="strat__choice_color" value="8">8</option>
-                </select>
-                <label for="people" class="start__choice_label"
-                  >минимум 4 человека</label
-                >
-              </div>
-              <button type="submit" class="start__button button">
-                Найти программу
-              </button>
-            </form>
-            <button
-              type="submit"
-              class="start__button start__button_second button"
-            >
-              Найти программу
-            </button>
-          </div>
+          </button>
+        </header>
+        <div class="start__info">
+          <h1 class="start__info_title">
+            Насладись прогулкой в горах с командой единомышленников
+          </h1>
+          <form action="ссылка на обработчик" method="POST" class="form">
+            <div>
+              <select id="type-travel">
+                <option value="location" selected>Локция для тура</option>
+                <option value="GreatBritain">Великобритания</option>
+                <option value="USA">США</option>
+                <option value="Russia">Россия</option>
+                <option value="SouthAfrica">ЮАР</option>
+                <option value="Thailand">Тайланд</option>
+                <option value="Iceland">Исландия</option>
+              </select>
+              <label for="type-travel">выберите из списка</label>
+            </div>
+            <div>
+              <input type="date" id="date-start" /><input
+                type="date"
+                id="date-end"
+              />
+              <label for="date">укажите диапазон</label>
+            </div>
+            <div>
+              <select id="people">
+                <option value="participant" selected>Участники</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+              <label for="people">минимум 4 человека</label>
+            </div>
+            <button type="submit" class="button">Найти программу</button>
+          </form>
         </div>
       </div>
     </section>
@@ -136,18 +95,22 @@
         <div class="container">
           <div class="camping__wrapper">
             <div class="camping__media">
-              <div class="media__photo-frame">
-                <img
-                  class="media"
-                  src="/assets/images/block1.jpg"
-                  alt="photo"
-                />
+              <div class="media__second-frame">
+                <div class="media__second">
+                  <img
+                    class="media__img"
+                    src="/assets/images/block1.jpg"
+                    alt="photo"
+                  />
+                </div>
               </div>
-              <div class="media__video-frame">
-                <video
-                  class="media"
-                  src="/assets/video/block1_video.mp4"
-                ></video>
+              <div class="media__main-frame">
+                <div class="media__main">
+                  <video
+                    class="media__video"
+                    src="/assets/video/block1_video.mp4"
+                  ></video>
+                </div>
                 <div class="play__button">
                   <img
                     src="/assets/icons/block1_button-play.svg"
@@ -168,7 +131,7 @@
                 взял одно из самых странных слов в Lorem Ipsum, "consectetur"и
                 занялся его поисками в классической латинской литературе.
               </p>
-              <button class="button camping__button">Программа тура</button>
+              <a class="button camping__button" href="#">Программа тура</a>
             </div>
           </div>
         </div>
@@ -182,57 +145,57 @@
             <div class="description">
               <h2 class="main__title_first">наше предложение</h2>
               <p class="main__title_second">Лучшие программы для тебя</p>
-              <p class="main__text">
+              <p class="main__text main__text-offer">
                 Его корни уходят в один фрагмент классической латыни 45 года
                 н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
                 профессор латыни из колледжа.
               </p>
               <ul class="advantages">
                 <li class="advantages__item">
-                  <span class="advantages-title">Опытный гид</span>
-                  <span
+                  <span class="advantages__title">Опытный гид</span>
+                  <span class="advantages__text"
                     >Для современного мира базовый вектор развития предполагает
                     независимые способы реализации соответствующих условий
-                    активизации.</span
-                  >
+                    активизации.
+                  </span>
                 </li>
                 <li class="advantages__item">
-                  <span class="advantages-title">Безопасный поход</span>
-                  <span
+                  <span class="advantages__title">Безопасный поход</span>
+                  <span class="advantages__text"
                     >Для современного мира базовый вектор развития предполагает
                     независимые способы реализации соответствующих условий
-                    активизации.</span
-                  >
+                    активизации.
+                  </span>
                 </li>
                 <li class="advantages__item">
-                  <span class="advantages-title">Лояльные цены</span>
-                  <span
+                  <span class="advantages__title">Лояльные цены</span>
+                  <span class="advantages__text"
                     >Для современного мира базовый вектор развития предполагает
                     независимые способы реализации соответствующих условий
-                    активизации.</span
-                  >
+                    активизации.
+                  </span>
                 </li>
               </ul>
-              <button class="button offer__button">Стоимость программ</button>
+              <a class="button offer__button" href="#">Стоимость программ</a>
             </div>
             <div class="offer__photo">
               <img
-                class="offer__photo-item item_1 top-left_bottom-right"
+                class="offer__photo-item top-left_bottom-right"
                 src="/assets/images/block2_pic1.jpg"
                 alt="pic1"
               />
               <img
-                class="offer__photo-item item_2 top-right_bottom-left"
+                class="offer__photo-item top-right_bottom-left"
                 src="/assets/images/block2_pic2.jpg"
                 alt="pic2"
               />
               <img
-                class="offer__photo-item item_3 top-right_bottom-left"
+                class="offer__photo-item top-right_bottom-left"
                 src="/assets/images/block2_pic3.jpg"
                 alt="pic3"
               />
               <img
-                class="offer__photo-item item_4 top-left_bottom-right"
+                class="offer__photo-item top-left_bottom-right"
                 src="/assets/images/block2_pic4.jpg"
                 alt="pic4"
               />
@@ -283,7 +246,7 @@
                   «consectetur» и занялся его поисками в классической латинской
                   литературе.
                 </div>
-                <a href="#" class="button">Программа тура</a>
+                <a class="button" href="#">Программа тура</a>
               </div>
             </div>
             <div>
@@ -386,7 +349,7 @@
                 />
                 <div class="news__content">
                   <p class="news__title">
-                    Красивая Италя, какая она в реальности?
+                    Красивая Италия, какая она в реальности?
                   </p>
                   <p class="news__text">
                     Для современного мира базовый вектор развития предполагает
@@ -457,7 +420,7 @@
               </article>
             </div>
           </div>
-          <button class="button blog__button">Другие материалы</button>
+          <a class="button blog__button">Другие материалы</a>
         </div>
       </section>
       <!-- Конец блока 4 Екатерины -->
@@ -521,13 +484,13 @@
         </div>
         <div class="icons">
           <a href="#"
-            ><img src="./assets/images/ic_baseline-telegram.svg" alt=""
+            ><img src="./assets/icons/footer_telegram.svg" alt=""
           /></a>
+          <a href="#"><img src="./assets/icons/footer_vk.svg" alt="" /></a>
           <a href="#"
-            ><img src="./assets/images/entypo-social_vk-with-circle.svg" alt=""
+            ><img src="./assets/icons/footer_pinterest.svg" alt=""
           /></a>
-          <a href="#"><img src="./assets/images/mdi_pinterest.svg" alt="" /></a>
-          <a href="#"><img src="./assets/images/mdi_skype.svg" alt="" /></a>
+          <a href="#"><img src="./assets/icons/footer_skype.svg" alt="" /></a>
         </div>
       </div>
 
