@@ -57,6 +57,14 @@
   display: none;
 }
 
+header a:visited {
+  color: $white;
+}
+
+li > a:hover {
+  color: $yellow;
+}
+
 .start__info {
   padding-bottom: 50px;
 }
