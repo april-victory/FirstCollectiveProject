@@ -4,152 +4,292 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $dark-green;
+  min-height: 100%;
+  color: $white;
+}
+
+.start__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
 }
-.logo {
+
+.header__logo {
+  width: 137px;
+  height: 72px;
+  flex-shrink: 0;
 }
+
 .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 44px;
+  font-size: 18px;
+  font-weight: 600;
 }
-.header__ {
+
+.header__nav_items {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
 }
-.link {
+
+.header__button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.button {
+
+.header__burger {
+  display: none;
 }
-.burger-menu {
-}
+
 .start__info {
+  padding-bottom: 50px;
 }
+
 .start__info_title {
   font-family: "NEXT ART";
+  font-size: 50px;
+  letter-spacing: 1px;
 }
 
-// #menuToggle {
-//   display: block;
-//   position: relative;
-//   top: 50px;
-//   left: 50px;
+.start__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  align-items: start;
+  justify-items: center;
+  gap: 24px;
+  max-width: 1180px;
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
 
-//   z-index: 1;
+.start__choice {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 270px;
+}
 
-//   -webkit-user-select: none;
-//   user-select: none;
-// }
+.strat__choice_wrapper {
+  display: flex;
+  height: 52px;
+  padding: 0px 16px;
+  border-radius: 8px;
+  border: 1px solid #e1e3e4;
+  background-color: unset;
+  color: $white;
+}
 
-// #menuToggle a {
-//   text-decoration: none;
-//   color: #232323;
+.strat__choice_color {
+  color: $black;
+}
 
-//   transition: color 0.3s ease;
-// }
+.start__choice_label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
 
-// #menuToggle a:hover {
-//   color: tomato;
-// }
+.strat__choice_date {
+  flex: 1;
+  border: 0;
+  background-color: unset;
+  color: $white;
+  width: 50%;
+  padding-right: 8px;
+}
 
-// #menuToggle input {
-//   display: block;
-//   width: 40px;
-//   height: 32px;
-//   position: absolute;
-//   top: -7px;
-//   left: -5px;
+.strat__choice_date::-webkit-calendar-picker-indicator {
+  filter: invert(0.9);
+}
 
-//   cursor: pointer;
+.start__button {
+  display: flex;
+  padding: 16px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: $white;
+  color: $dark-green;
+}
 
-//   opacity: 0; /* hide this */
-//   z-index: 2; /* and place it over the hamburger */
+.start__button:hover {
+  color: $white;
+  background: $dark-green;
+}
 
-//   -webkit-touch-callout: none;
-// }
+.start__button_second {
+  display: none;
+}
 
-// /*
-//  * Just a quick hamburger
-//  */
-// #menuToggle span {
-//   display: block;
-//   width: 33px;
-//   height: 4px;
-//   margin-bottom: 5px;
-//   position: relative;
+@media screen and (max-width: 1098px) {
+  .header__nav {
+    display: none;
+  }
 
-//   background: #cdcdcd;
-//   border-radius: 3px;
+  .header__button {
+    display: none;
+  }
 
-//   z-index: 1;
+  .header__burger {
+    // display: none;
+    display: block;
+    position: relative;
+    right: 16px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
 
-//   transform-origin: 4px 0px;
+  .header__burger ul {
+    padding: 0;
+  }
 
-//   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-//     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-// }
+  .header__burger a:hover {
+    text-decoration: underline;
+  }
 
-// #menuToggle span:first-child {
-//   transform-origin: 0% 0%;
-// }
+  .header__burger a::before {
+    content: ">";
+    padding-right: 8px;
+  }
 
-// #menuToggle span:nth-last-child(2) {
-//   transform-origin: 0% 100%;
-// }
+  .header__burger_checkbox {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
 
-// /*
-//  * Transform all the slices of hamburger
-//  * into a crossmark.
-//  */
-// #menuToggle input:checked ~ span {
-//   opacity: 1;
-//   transform: rotate(45deg) translate(-2px, -1px);
-//   background: #232323;
-// }
+  .header__burger_checkbox:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: $white;
+  }
 
-// /*
-//  * But let's hide the middle one.
-//  */
-// #menuToggle input:checked ~ span:nth-last-child(3) {
-//   opacity: 0;
-//   transform: rotate(0deg) scale(0.2, 0.2);
-// }
+  .header__burger_checkbox:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
 
-// /*
-//  * Ohyeah and the last one should go the other direction
-//  */
-// #menuToggle input:checked ~ span:nth-last-child(2) {
-//   transform: rotate(-45deg) translate(0, -1px);
-// }
+  .header__burger_line {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: $white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
 
-// /*
-//  * Make this absolute positioned
-//  * at the top left of the screen
-//  */
-// #menu {
-//   position: absolute;
-//   width: 300px;
-//   margin: -100px 0 0 -50px;
-//   padding: 50px;
-//   padding-top: 125px;
+  .header__burger_line:first-child {
+    transform-origin: 0% 0%;
+  }
 
-//   background: #ededed;
-//   list-style-type: none;
-//   -webkit-font-smoothing: antialiased;
-//   /* to stop flickering of text in safari */
+  .header__burger_line:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
 
-//   transform-origin: 0% 0%;
-//   transform: translate(-100%, 0);
+  .header__burger_checkbox:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
 
-//   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-// }
+  .header__burger_checkbox:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
 
-// #menu li {
-//   padding: 10px 0;
-//   font-size: 22px;
-// }
+  .header__burger_checkbox:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  .header__burger_menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: $dark-green;
+    transition-duration: 0.5s;
+  }
 
-// /*
-//  * And let's slide it in from the left
-//  */
-// #menuToggle input:checked ~ ul {
-//   transform: none;
-// }
+  .header__burger_menu > li {
+    margin: 30px;
+  }
+  .header__burger_checkbox:checked ~ .header__burger_menu {
+    visibility: visible;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .start__info_title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .start__info_title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    letter-spacing: unset;
+  }
+  .start__form {
+    display: none;
+  }
+
+  .start__button_second {
+    display: flex;
+    background-color: $white;
+    color: $dark-green;
+  }
+  .start__button_second:hover {
+    color: $white;
+    background: $dark-green;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .start__info_title {
+    margin-bottom: 50px;
+    font-size: 20px;
+    letter-spacing: unset;
+  }
+}

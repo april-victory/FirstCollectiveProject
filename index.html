@@ -12,77 +12,118 @@
     <!-- Начало блока header Виктории -->
     <section class="start">
       <div class="container">
-        <header class="header">
-          <img src="./assets/icons/header_logo.svg" alt="logo" class="logo" />
-          <nav class="header__nav">
-            <ul class="header__">
-              <li><a href="#header" class="link">Главная</a></li>
-              <li><a href="#guide" class="link">Про гида</a></li>
-              <li><a href="#program" class="link">Программа тура</a></li>
-              <li><a href="#price" class="link">Стоимость</a></li>
-              <li><a href="#blog" class="link">Блог</a></li>
-              <li><a href="#contact" class="link">Контакты</a></li>
-            </ul>
-            <a href="#" class="button">Консультация</a>
-          </nav>
-          <button class="burger-menu">
-            <nav role="navigation">
-              <div id="menuToggle">
-                <input type="checkbox" />
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <ul id="menu">
-                  <li><a href="#header" class="link">Главная</a></li>
-                  <li><a href="#guide" class="link">Про гида</a></li>
-                  <li><a href="#program" class="link">Программа тура</a></li>
-                  <li><a href="#price" class="link">Стоимость</a></li>
-                  <li><a href="#blog" class="link">Блог</a></li>
-                  <li><a href="#contact" class="link">Контакты</a></li>
-                </ul>
-              </div>
+        <div class="start__wrapper">
+          <header class="header">
+            <img
+              src="./assets/icons/header_logo.svg"
+              alt="logo"
+              class="header__logo"
+            />
+            <nav class="header__nav">
+              <ul class="header__nav_items">
+                <li><a href="#header">Главная</a></li>
+                <li><a href="#guide">Про гида</a></li>
+                <li><a href="#program">Программа тура</a></li>
+                <li><a href="#price">Стоимость</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contact">Контакты</a></li>
+              </ul>
+              <a href="#" class="header__button button">Консультация</a>
             </nav>
-          </button>
-        </header>
-        <div class="start__info">
-          <h1 class="start__info_title">
-            Насладись прогулкой в горах с командой единомышленников
-          </h1>
-          <form action="ссылка на обработчик" method="POST" class="form">
-            <div>
-              <select id="type-travel">
-                <option value="location" selected>Локция для тура</option>
-                <option value="GreatBritain">Великобритания</option>
-                <option value="USA">США</option>
-                <option value="Russia">Россия</option>
-                <option value="SouthAfrica">ЮАР</option>
-                <option value="Thailand">Тайланд</option>
-                <option value="Iceland">Исландия</option>
-              </select>
-              <label for="type-travel">выберите из списка</label>
-            </div>
-            <div>
-              <input type="date" id="date-start" /><input
-                type="date"
-                id="date-end"
-              />
-              <label for="date">укажите диапазон</label>
-            </div>
-            <div>
-              <select id="people">
-                <option value="participant" selected>Участники</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-              </select>
-              <label for="people">минимум 4 человека</label>
-            </div>
-            <button type="submit" class="button">Найти программу</button>
-          </form>
+            <nav class="header__burger">
+              <input type="checkbox" class="header__burger_checkbox" />
+              <span class="header__burger_line"></span>
+              <span class="header__burger_line"></span>
+              <span class="header__burger_line"></span>
+              <ul class="header__burger_menu">
+                <li><a href="#header">Главная</a></li>
+                <li><a href="#guide">Про гида</a></li>
+                <li><a href="#program">Программа тура</a></li>
+                <li><a href="#price">Стоимость</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contact">Контакты</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="start__info">
+            <h1 class="start__info_title">
+              Насладись прогулкой в горах <br />
+              с командой единомышленников
+            </h1>
+            <form
+              action="ссылка на обработчик"
+              method="POST"
+              class="start__form"
+            >
+              <div class="start__choice">
+                <select id="type-travel" class="strat__choice_wrapper">
+                  <option class="strat__choice_color" value="location" selected>
+                    Локция для тура
+                  </option>
+                  <option class="strat__choice_color" value="GreatBritain">
+                    Великобритания
+                  </option>
+                  <option class="strat__choice_color" value="USA">США</option>
+                  <option class="strat__choice_color" value="Russia">
+                    Россия
+                  </option>
+                  <option class="strat__choice_color" value="SouthAfrica">
+                    ЮАР
+                  </option>
+                  <option class="strat__choice_color" value="Thailand">
+                    Тайланд
+                  </option>
+                  <option class="strat__choice_color" value="Iceland">
+                    Исландия
+                  </option>
+                </select>
+                <label for="type-travel" class="start__choice_label"
+                  >выберите из списка</label
+                >
+              </div>
+              <div class="start__choice">
+                <div class="strat__choice_wrapper">
+                  <input
+                    type="date"
+                    id="date-start"
+                    class="strat__choice_date"
+                  />
+                  <input type="date" id="date-end" class="strat__choice_date" />
+                </div>
+                <label for="date" class="start__choice_label"
+                  >укажите диапазон</label
+                >
+              </div>
+              <div class="start__choice">
+                <select id="people" class="strat__choice_wrapper">
+                  <option
+                    class="strat__choice_color"
+                    value="participant"
+                    selected
+                  >
+                    Участники
+                  </option>
+                  <option class="strat__choice_color" value="4">4</option>
+                  <option class="strat__choice_color" value="5">5</option>
+                  <option class="strat__choice_color" value="6">6</option>
+                  <option class="strat__choice_color" value="7">7</option>
+                  <option class="strat__choice_color" value="8">8</option>
+                </select>
+                <label for="people" class="start__choice_label"
+                  >минимум 4 человека</label
+                >
+              </div>
+              <button type="submit" class="start__button button">
+                Найти программу
+              </button>
+            </form>
+            <button
+              type="submit"
+              class="start__button start__button_second button"
+            >
+              Найти программу
+            </button>
+          </div>
         </div>
       </div>
     </section>
