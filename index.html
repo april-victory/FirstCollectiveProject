@@ -12,7 +12,7 @@
     <!-- Начало блока header Виктории -->
     <section class="start">
       <div class="container">
-        <header class="header" id="header">
+        <header class="header">
           <img src="./assets/icons/header_logo.svg" alt="logo" class="logo" />
           <nav class="header__nav">
             <ul class="header__">
@@ -50,6 +50,39 @@
           <h1 class="start__info_title">
             Насладись прогулкой в горах с командой единомышленников
           </h1>
+          <form action="ссылка на обработчик" method="POST" class="form">
+            <div>
+              <select id="type-travel">
+                <option value="location" selected>Локция для тура</option>
+                <option value="GreatBritain">Великобритания</option>
+                <option value="USA">США</option>
+                <option value="Russia">Россия</option>
+                <option value="SouthAfrica">ЮАР</option>
+                <option value="Thailand">Тайланд</option>
+                <option value="Iceland">Исландия</option>
+              </select>
+              <label for="type-travel">выберите из списка</label>
+            </div>
+            <div>
+              <input type="date" id="date-start" /><input
+                type="date"
+                id="date-end"
+              />
+              <label for="date">укажите диапазон</label>
+            </div>
+            <div>
+              <select id="people">
+                <option value="participant" selected>Участники</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+              <label for="people">минимум 4 человека</label>
+            </div>
+            <button type="submit" class="button">Найти программу</button>
+          </form>
         </div>
       </div>
     </section>
@@ -169,7 +202,125 @@
       <!-- Конец блока 2 Екатерины -->
 
       <!-- Начало блока 3 Виктории -->
-      <div class="popular"></div>
+      <section class="popular">
+        <div class="container">
+          <div>
+            <h2 class="main__title_first">по версии отдыхающих</h2>
+            <p class="main__title_second">Популярные направления</p>
+          </div>
+          <div>
+            <div>
+              <div>
+                <picture>
+                  <source
+                    srcset="
+                      ./assets/images/block3_pic1.jpg  400w,
+                      ./assets/images/block3_pic1.jpg  800w,
+                      ./assets/images/block3_pic1.jpg 1200w
+                    "
+                  />
+                  <img src="./assets/images/block3_pic1.jpg" alt="pic1" />
+                </picture>
+              </div>
+              <div class="rating">
+                <!-- <img src="./assets/icons/block3_star.svg" alt="star" /> -->
+                <p class="rating__number">4.9</p>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <span>Озеро возле гор</span>
+                    <span>романтическое приключение</span>
+                  </div>
+                  <div>480 $</div>
+                </div>
+                <div>
+                  Его корни уходят в один фрагмент классической латыни 45 года
+                  н. э., то есть более двух тысячелетий назад. Ричард
+                  МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат
+                  Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
+                  «consectetur» и занялся его поисками в классической латинской
+                  литературе.
+                </div>
+                <a href="#" class="button">Программа тура</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <picture>
+                  <source
+                    srcset="
+                      ./assets/images/block3_pic2.jpg  400w,
+                      ./assets/images/block3_pic2.jpg  800w,
+                      ./assets/images/block3_pic2.jpg 1200w
+                    "
+                  />
+                  <img src="./assets/images/block3_pic2.jpg" alt="pic2" />
+                </picture>
+              </div>
+              <div class="rating">
+                <img src="./assets/icons/block3_star.svg" alt="star" />
+                <p>4.5</p>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <span>Ночь в горах </span>
+                    <span> в компании друзей</span>
+                  </div>
+                  <div>500 $</div>
+                </div>
+                <div>
+                  Его корни уходят в один фрагмент классической латыни 45 года
+                  н. э., то есть более двух тысячелетий назад. Ричард
+                  МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат
+                  Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
+                  «consectetur» и занялся его поисками в классической латинской
+                  литературе.
+                </div>
+                <a href="#" class="button">Программа тура</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <picture>
+                  <source
+                    srcset="
+                      ./assets/images/block3_pic3.jpg  400w,
+                      ./assets/images/block3_pic3.jpg  800w,
+                      ./assets/images/block3_pic3.jpg 1200w
+                    "
+                  />
+                  <img src="./assets/images/block3_pic3.jpg" alt="pic3" />
+                </picture>
+              </div>
+              <div class="rating">
+                <img src="./assets/icons/block3_star.svg" alt="star" />
+                <p>5.0</p>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <span>Йога в горах</span>
+                    <span>для тех, кто забоится о себе</span>
+                  </div>
+                  <div>230 $</div>
+                </div>
+                <div>
+                  Его корни уходят в один фрагмент классической латыни 45 года
+                  н. э., то есть более двух тысячелетий назад. Ричард
+                  МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат
+                  Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
+                  «consectetur» и занялся его поисками в классической латинской
+                  литературе.
+                </div>
+                <a href="#" class="button">Программа тура</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button">Рейтинг направлений</a>
+        </div>
+      </section>
       <!-- Конец блока 3 Виктории -->
 
       <!-- Начало блока 4 Екатерины -->
@@ -275,7 +426,37 @@
       <!-- Конец блока 5 Ксении -->
 
       <!-- Начало формы Виктории -->
-      <div class="subscription"></div>
+      <section class="subcription">
+        <div class="container">
+          <div class="subscription__wrapper">
+            <div class="subscription__content">
+              <h2 class="main__title_first">актуально</h2>
+              <p class="main__title_second">
+                Получайте полезные рассылки о путешествиях
+              </p>
+            </div>
+            <div class="subscription__form">
+              <form action="ссылка на обработчик">
+                <label for="email">Введите e-mail адрес</label>
+                <input type="email" placeholder="name@domain.com" id="email" />
+                <button type="submit" class="button">
+                  Подпиаться на новости
+                </button>
+              </form>
+              <p>
+                подписываясь на новости, вы автоматически соглашаетесь с
+                <a href="#" class="subscription__link"
+                  >условиями обработки персональных данных</a
+                >
+                и
+                <a href="#" class="subscription__link"
+                  >правилами рекламных рассылок</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Конец формы Виктории -->
     </main>
     <!-- Конец блока main -->
