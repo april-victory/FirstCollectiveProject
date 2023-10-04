@@ -84,6 +84,7 @@
                 <div class="strat__choice_wrapper">
                   <input
                     type="date"
+                    required
                     id="date-start"
                     class="strat__choice_date"
                   />
@@ -247,7 +248,7 @@
       <!-- Начало блока 3 Виктории -->
       <section class="popular">
         <div class="container">
-          <div>
+          <div class="popular__title">
             <h2 class="main__title_first">по версии отдыхающих</h2>
             <p class="main__title_second">Популярные направления</p>
           </div>
@@ -267,7 +268,7 @@
                 </picture>
               </div>
               <div class="rating">
-                <!-- <img src="./assets/icons/block3_star.svg" alt="star" /> -->
+                <img src="./assets/icons/block3_star.svg" alt="star" />
                 <p class="rating__number">4.9</p>
               </div>
               <div>
@@ -476,20 +477,28 @@
         <div class="container">
           <div class="subscription__wrapper">
             <div class="subscription__content">
-              <h2 class="main__title_first">актуально</h2>
-              <p class="main__title_second">
+              <h2 class="main__title_first main__title_first-subscription">
+                актуально
+              </h2>
+              <p class="main__title_second main__title_second-subscription">
                 Получайте полезные рассылки о путешествиях
               </p>
             </div>
             <div class="subscription__form">
-              <form action="ссылка на обработчик">
-                <label for="email">Введите e-mail адрес</label>
-                <input type="email" placeholder="name@domain.com" id="email" />
-                <button type="submit" class="button">
-                  Подпиаться на новости
+              <p class="subscription__form_label-first">Введите e-mail адрес</p>
+              <form action="ссылка на обработчик" class="subscription__email">
+                <input
+                  type="email"
+                  required
+                  placeholder="name@domain.com"
+                  id="email"
+                  class="subscription__email_wrapper"
+                /><label for="email"></label>
+                <button type="submit" class="subscription__button button">
+                  Подпиcаться на новости
                 </button>
               </form>
-              <p>
+              <p class="subscription__form_label-second">
                 подписываясь на новости, вы автоматически соглашаетесь с
                 <a href="#" class="subscription__link"
                   >условиями обработки персональных данных</a

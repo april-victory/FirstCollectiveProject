@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $dark-green;
-  min-height: 100%;
+  min-height: 100vh;
   color: $white;
 }
 
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header {
@@ -32,17 +32,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 44px;
-  font-size: 18px;
-  font-weight: 600;
+  gap: 30px;
 }
 
 .header__nav_items {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: 20px;
   margin: 0;
   padding: 0;
+  font-weight: 600;
 }
 
 .header__button {
@@ -70,7 +69,7 @@ li > a:hover {
 }
 
 .start__info_title {
-  font-family: "NEXT ART";
+  font-family: "NEXT ART", Arial, sans-serif;
   font-size: 50px;
   letter-spacing: 1px;
 }
@@ -152,7 +151,7 @@ li > a:hover {
   display: none;
 }
 
-@media screen and (max-width: 1098px) {
+@media screen and (max-width: 991px) {
   .header__nav {
     display: none;
   }
@@ -162,7 +161,6 @@ li > a:hover {
   }
 
   .header__burger {
-    // display: none;
     display: block;
     position: relative;
     right: 16px;
@@ -271,6 +269,14 @@ li > a:hover {
   .start__info_title {
     font-size: 38px;
   }
+
+  .start__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -297,7 +303,7 @@ li > a:hover {
 @media screen and (max-width: 360px) {
   .start__info_title {
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: unset;
   }
 }
