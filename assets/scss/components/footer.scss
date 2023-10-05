@@ -10,10 +10,9 @@
   height: 587px;
   background-color: #1a3e3e;
   background: #1a3e3e;
-  color: $white;
+  color: white;
 }
 .footer_content {
-  border: 1px solid red;
   font-size: 14px;
   height: 300px;
   text-align: start;
@@ -61,7 +60,6 @@
 }
 
 .footer_content li {
-  border: 1px solid red;
   margin-bottom: 13px;
   list-style-type: none;
   margin-left: -40px;
@@ -96,13 +94,10 @@
 }
 
 .footer__info {
-  border: 1px solid red;
   color: white;
 }
 
 .footer__policy {
-  border: 1px solid red;
-
   padding-top: 15px;
   font-size: 18px;
   font-family: "Nunito Sans";
@@ -119,7 +114,6 @@
 }
 @media screen and (max-width: 1199px) {
   .footer {
-    background-color: orange;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 0.5fr;
@@ -156,7 +150,6 @@
     padding-inline-end: 30px;
   }
   .room {
-    // padding-inline-start: 50px;
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -170,14 +163,9 @@
     justify-self: start;
   }
 }
-// @media screen and (max-width: 991px) {
-//   .footer {
-//     background-color: #5bc730;
-//   }
-// }
+
 @media screen and (max-width: 768px) {
   .footer {
-    background-color: red;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 0.5fr;
@@ -215,7 +203,6 @@
     font-size: 13px;
   }
   .footer_content {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -236,9 +223,9 @@
     grid-row: 2/3;
   }
 }
+
 @media screen and (max-width: 575px) {
   .footer {
-    background-color: aqua;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -294,9 +281,9 @@
     grid-row: 3/4;
   }
 }
+
 @media screen and (max-width: 360px) {
   .footer {
-    background-color: rgb(75, 66, 232);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.5fr;
