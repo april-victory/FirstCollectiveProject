@@ -123,11 +123,13 @@
             </div>
             <div class="media__main-frame">
               <div class="media__main">
-                <video class="media__video" src="/assets/video/block1_video.mp4"></video>
+                <video class="media__video" controls preload="auto">
+                  <source src="/assets/video/block1_video.mp4" type="video/mp4" />
+                </video>
               </div>
-              <div class="play__button">
+              <!-- <div class="play__button">
                 <img src="/assets/icons/block1_button-play.svg" alt="button-play" />
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="description">
@@ -308,7 +310,9 @@
         <div class="blog__wrapper">
           <div class="blog">
             <article class="news">
-              <img class="news__img" src="/assets/images/block4_pic1.jpg" alt="pic1" />
+              <div class="news__img-wrapper">
+                <img class="news__img" src="/assets/images/block4_pic1.jpg" alt="pic1" />
+              </div>
               <div class="news__content">
                 <p class="news__title">
                   Красивая Италия, какая она в реальности?
@@ -325,7 +329,9 @@
               </div>
             </article>
             <article class="news">
-              <img class="news__img" src="/assets/images/block4_pic2.jpg" alt="pic2" />
+              <div class="news__img-wrapper">
+                <img class="news__img" src="/assets/images/block4_pic2.jpg" alt="pic2" />
+              </div>
               <div class="news__content">
                 <p class="news__title">
                   Долой сомнения! Весь мир открыт для вас!
@@ -343,7 +349,9 @@
               </div>
             </article>
             <article class="news">
-              <img class="news__img" src="/assets/images/block4_pic3.jpg" alt="pic3" />
+              <div class="news__img-wrapper">
+                <img class="news__img" src="/assets/images/block4_pic3.jpg" alt="pic3" />
+              </div>
               <div class="news__content">
                 <p class="news__title">
                   Как подготовиться к путешествию в одиночку?
@@ -358,7 +366,9 @@
               </div>
             </article>
             <article class="news">
-              <img class="news__img" src="/assets/images/block4_pic4.jpg" alt="pic4" />
+              <div class="news__img-wrapper">
+                <img class="news__img" src="/assets/images/block4_pic4.jpg" alt="pic4" />
+              </div>
               <div class="news__content">
                 <p class="news__title">Индия ... летим?</p>
                 <p class="news__text">Для современного мира базовый.</p>
