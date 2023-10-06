@@ -45,6 +45,7 @@
 }
 
 .main__title_second {
+  margin: 0 0 2.2rem;
   font-size: 2rem;
   font-weight: 800;
   color: $black;
@@ -306,6 +307,10 @@
   background-color: $light-grey;
 }
 
+.title-center {
+  text-align: center;
+}
+
 .blog__wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -412,39 +417,14 @@
   height: 2.9rem;
 }
 // Конец блока 4 Екатерины
+
 // Начало блока 5 Ксении
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
 .gallery {
-  display: block;
-  background: #fdfdfd;
-  margin: 0 auto;
-  padding: 0 0.6rem;
-  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 4.2rem 0;
 }
-.heading {
-  text-align: center;
-  .subtitle {
-    margin: 0 0 0.5rem;
-    font-family: "NunitoSans_Regular", sans-serif;
-    color: #f2be22;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.25px;
-  }
-  .title {
-    margin: 0 0 2.5rem;
-    font-family: "NunitoSans_Regular", sans-serif;
-    color: #18121e;
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 2.375rem;
-    align-self: center;
-  }
-}
+
 .photo_container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -454,6 +434,7 @@
   margin-bottom: 3.125rem;
   justify-content: center;
 }
+
 .photo_container img {
   background: var(--bg) center / cover;
   border-radius: 6px;
@@ -478,28 +459,19 @@
 .photo6 {
   grid-column: span 3;
 }
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: #fdfdfd;
-  cursor: pointer;
-  text-decoration: underline;
-}
 .gallery_button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "NunitoSans_Regular";
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.25px;
   color: #fdfdfd;
-  border: 1px solid #1a3e3e;
+  border: 1px solid $dark-green;
   border-radius: 4px;
   width: 11.125rem;
   height: 3.25rem;
-  background-color: #1a3e3e;
+  background-color: $dark-green;
   margin: 0 auto;
 }
 // Конец блока 5 Ксении
