@@ -23,5 +23,5 @@
 
 - [Шамраева Виктория Валерьевна](https://github.com/april-victory)
 - [Титарева Екатерина Романовна](https://github.com/Ekaterina-Titareva)
-- [Юлия](https://github.com/julflorid)
+- [Васильева Юлия Сергеевна](https://github.com/julflorid)
 - [Федорова Ксения Александровна](https://github.com/Infirstperson)
