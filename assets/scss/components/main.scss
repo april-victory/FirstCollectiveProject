@@ -191,16 +191,16 @@
   display: flex;
   justify-content: space-around;
   max-width: 100%;
-  margin-bottom: 2.7778rem;
-  gap: 0.5556rem;
+  margin-bottom: 2.8rem;
+  gap: 0.6rem;
 }
 
 .popular__item {
   position: relative;
   overflow: hidden;
-  border-radius: 1.7778rem;
+  border-radius: 1.8rem;
   max-width: 31%;
-  max-height: 27.7778rem;
+  max-height: 27.8rem;
   flex-shrink: 0;
 }
 
@@ -214,18 +214,18 @@
 .popular__rating {
   position: absolute;
   right: 0;
-  top: 2.7778rem;
+  top: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.2222rem 0 0 0.2222rem;
-  gap: 0.2778rem;
-  width: 3.6111rem;
-  height: 1.7778rem;
+  border-radius: 0.2rem 0 0 0.2rem;
+  gap: 0.28rem;
+  width: 3.6rem;
+  height: 1.8rem;
   font-weight: 700;
   color: #1a3e3e;
   background: rgba(253, 253, 253, 0.4);
-  backdrop-filter: blur(0.2222rem);
+  backdrop-filter: blur(0.2rem);
 }
 
 .popular__overlay {
@@ -233,13 +233,13 @@
   top: 80%;
   display: flex;
   flex-direction: column;
-  border-radius: 1.7778rem;
-  padding: 1.6667rem 1.1111rem 1.1111rem;
+  border-radius: 1.8rem;
+  padding: 1.6667rem 1.1rem 1.1rem;
   height: 100%;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.2);
   transition: all 2s ease-in-out;
-  backdrop-filter: blur(0.3333rem);
+  backdrop-filter: blur(0.3rem);
 }
 
 .popular__overlay:hover {
@@ -251,7 +251,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2.1111rem;
+  margin-bottom: 2.1rem;
 }
 
 .overlay__title {
@@ -260,12 +260,12 @@
 
 .overlay__title_first {
   display: block;
-  font-size: 1.3333rem;
+  font-size: 1.3rem;
   line-height: 120%;
 }
 
 .overlay__title_second {
-  font-size: 0.7778rem;
+  font-size: 0.8rem;
   line-height: 1rem;
 }
 
@@ -273,25 +273,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.2222rem;
-  width: 3.7222rem;
-  height: 1.6667rem;
-  font-size: 0.8889rem;
+  border-radius: 0.2rem;
+  width: 3.7rem;
+  height: 1.7rem;
+  font-size: 0.9rem;
   line-height: 1rem;
   background: rgba(255, 255, 255, 0.3);
   color: $white;
 }
 
 .overlay__description {
-  font-size: 0.7778rem;
+  font-size: 0.8rem;
   line-height: 150%;
   color: $white;
 }
 
 .overlay__button {
   margin-top: auto;
-  width: 9.7778rem;
-  height: 2.4444rem;
+  width: 9.8rem;
+  height: 2.4rem;
 }
 
 .popular__button {
@@ -306,6 +306,10 @@
   background-color: $light-grey;
 }
 
+.title-center {
+  text-align: center;
+}
+
 .blog__wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -313,7 +317,6 @@
   overflow: hidden;
   list-style: none;
   padding: 0;
-  z-index: 1;
   display: block;
 }
 
@@ -414,39 +417,14 @@
   height: 2.9rem;
 }
 // Конец блока 4 Екатерины
+
 // Начало блока 5 Ксении
-*{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
 .gallery {
-  display: block;
-  background: #FDFDFD;
-  margin: 0 auto;
-  padding: 0 0.6rem;
-  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 4.2rem 0;
 }
-.heading {
-  text-align: center;
-  .subtitle {
-  margin: 0 0 0.5rem;
-  font-family: "NunitoSans_Regular", sans-serif;
-  color: #F2BE22;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.25px;
-  }
-  .title {
-  margin: 0 0 2.5rem;
-  font-family: "NunitoSans_Regular", sans-serif;
-  color: #18121E;
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2.375rem;
-  align-self: center;
-}
-}
+
 .photo_container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -456,6 +434,7 @@
   margin-bottom: 3.125rem;
   justify-content: center;
 }
+
 .photo_container img {
   background: var(--bg) center / cover;
   border-radius: 6px;
@@ -463,44 +442,40 @@
   height: 100%;
   object-fit: cover;
   filter: opacity(0.9);
-  box-shadow: inset 0 0 15px #18121E, 0 8px 15px #18121E;
+  box-shadow: inset 0 0 15px #18121e, 0 8px 15px #18121e;
 }
 .photo_container img:hover {
   filter: opacity(1);
-  transition: .2s;
+  transition: 0.2s;
   cursor: zoom-in;
 }
-.photo1, .photo5 {
+.photo1,
+.photo5 {
   grid-column: span 6;
 }
-.photo2, .photo3, .photo4, .photo6{
+.photo2,
+.photo3,
+.photo4,
+.photo6 {
   grid-column: span 3;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: #FDFDFD;
-  cursor: pointer;
-  text-decoration: underline;
 }
 .gallery_button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "NunitoSans_Regular";
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.25px;
-  color: #FDFDFD;
-  border: 1px solid #1A3E3E;
+  color: $white;
+  border: 1px solid $dark-green;
   border-radius: 4px;
   width: 11.125rem;
   height: 3.25rem;
-  background-color: #1A3E3E;
+  background-color: $dark-green;
   margin: 0 auto;
 }
 // Конец блока 5 Ксении
+
 //Начало формы Виктории
 
 .subcription {
@@ -514,8 +489,8 @@ a:hover {
   justify-content: space-between;
   flex-shrink: 0;
   border-radius: 6px;
-  margin-bottom: -5.4444rem;
-  padding: 2.2222rem 5.5556rem;
+  margin-bottom: -5.4rem;
+  padding: 2.2rem 5.6rem;
   box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
   background: $white;
   gap: 15px;
@@ -528,7 +503,7 @@ a:hover {
 
 .main__title_first-subscription {
   font-size: 0.9rem;
-  line-height: 1.1111rem;
+  line-height: 1.1rem;
 }
 .main__title_second-subscription {
   font-size: 1.6rem;
@@ -540,17 +515,17 @@ a:hover {
   align-items: flex-start;
 }
 .subscription__form_label-first {
-  font-size: 0.8889rem;
-  margin: 0 0 0.4444rem;
+  font-size: 0.9rem;
+  margin: 0 0 0.4rem;
 }
 .subscription__form_label-second {
-  font-size: 0.7778;
-  margin: 0.4444rem 0 0;
+  font-size: 0.8;
+  margin: 0.4rem 0 0;
 }
 
 .subscription__link {
   text-decoration: underline;
-  font-size: 0.7778rem;
+  font-size: 0.8rem;
 }
 .subscription__link:visited {
   color: $dark-green;
@@ -558,13 +533,13 @@ a:hover {
 .subscription__email {
   display: flex;
   align-items: center;
-  gap: 0.8889rem;
+  gap: 0.9rem;
   width: 100%;
 }
 
 .subscription__email_wrapper {
-  height: 2.4444rem;
-  padding: 0px 0.8889rem;
+  height: 2.4rem;
+  padding: 0px 0.9rem;
   width: 100%;
   border-radius: 4px;
   border: 1px solid #f3f5f4;
@@ -573,7 +548,7 @@ a:hover {
 }
 
 .subscription__button {
-  padding: 0.6667rem 1.3333rem;
+  padding: 0.7rem 1.3rem;
   min-width: 240px;
 }
 //Конец формы Виктории
@@ -587,7 +562,7 @@ a:hover {
 
 //Начало формы Виктории
 .subscription__wrapper {
-  padding: 2.2222rem;
+  padding: 2.2rem;
 }
 .main__title_second-subscription {
   font-size: 1.2rem;
@@ -633,7 +608,7 @@ grid-template-columns: 11.1rem;
 .subscription__wrapper {
   flex-direction: column;
   align-items: center;
-  padding: 2.2222rem;
+  padding: 2.2rem;
 }
 
 .subscription__content {
@@ -752,8 +727,8 @@ margin: 0 1.3rem;
 .subscription__button {
   display: flex;
   font-size: 0.8rem;
-  padding: 0.6667rem 1.3333rem;
-  min-width: 8.3333rem;
+  padding: 0.7rem 1.3rem;
+  min-width: 8.3rem;
 }
 //Конец формы Виктории
 }
