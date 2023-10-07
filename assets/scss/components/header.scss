@@ -19,12 +19,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 16px;
+  padding-top: .9rem;
 }
 
 .header__logo {
-  width: 137px;
-  height: 72px;
+  width: 7.6rem;
+  height: 4rem;
   flex-shrink: 0;
 }
 
@@ -32,13 +32,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 1.7rem;
 }
 
 .header__nav_items {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 1.1rem;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -46,10 +46,10 @@
 
 .header__button {
   display: flex;
-  padding: 12px 24px;
+  padding: 0.7rem 1.33rem;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: .6rem;
 }
 
 .header__burger {
@@ -70,7 +70,7 @@ li > a:hover {
 
 .start__info_title {
   font-family: "NEXT ART", Arial, sans-serif;
-  font-size: 50px;
+  font-size: 2.8rem;
   letter-spacing: 1px;
 }
 
@@ -79,13 +79,13 @@ li > a:hover {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   align-items: start;
   justify-items: center;
-  gap: 24px;
-  max-width: 1180px;
-  padding: 40px;
-  border-radius: 10px;
+  gap: 1.3rem;
+  max-width: 65.6rem;
+  padding: 2.2rem;
+  border-radius: .6rem;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(3px);
-  font-size: 16px;
+  font-size: .9rem;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -95,13 +95,13 @@ li > a:hover {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 270px;
+  width: 15rem;
 }
 
 .strat__choice_wrapper {
   display: flex;
-  height: 52px;
-  padding: 0px 16px;
+  height: 2.9rem;
+  padding: 0 .9rem;
   border-radius: 8px;
   border: 1px solid #e1e3e4;
   background-color: unset;
@@ -113,7 +113,7 @@ li > a:hover {
 }
 
 .start__choice_label {
-  font-size: 14px;
+  font-size: .8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -134,10 +134,10 @@ li > a:hover {
 
 .start__button {
   display: flex;
-  padding: 16px 36px;
+  padding: .9rem 2rem;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: .6rem;
   background-color: $white;
   color: $dark-green;
 }
@@ -163,7 +163,7 @@ li > a:hover {
   .header__burger {
     display: block;
     position: relative;
-    right: 16px;
+    right: .9rem;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -184,8 +184,8 @@ li > a:hover {
 
   .header__burger_checkbox {
     display: block;
-    width: 40px;
-    height: 32px;
+    width: 2.2rem;
+    height: 2rem;
     position: absolute;
     top: -7px;
     left: -5px;
@@ -208,7 +208,7 @@ li > a:hover {
 
   .header__burger_line {
     display: block;
-    width: 33px;
+    width: 1.8rem;
     height: 4px;
     margin-bottom: 5px;
     position: relative;
@@ -257,7 +257,7 @@ li > a:hover {
   }
 
   .header__burger_menu > li {
-    margin: 30px;
+    margin: 1.7rem;
   }
   .header__burger_checkbox:checked ~ .header__burger_menu {
     visibility: visible;
@@ -267,22 +267,22 @@ li > a:hover {
 
 @media screen and (max-width: 768px) {
   .start__info_title {
-    font-size: 38px;
+    font-size: 2.1rem;
   }
 
   .start__form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    padding: 15px;
+    gap: .8rem;
+    padding: .8rem;
   }
 }
 
 @media screen and (max-width: 575px) {
   .start__info_title {
-    margin-bottom: 32px;
-    font-size: 28px;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
     letter-spacing: unset;
   }
   .start__form {
@@ -302,8 +302,8 @@ li > a:hover {
 
 @media screen and (max-width: 360px) {
   .start__info_title {
-    margin-bottom: 50px;
-    font-size: 16px;
+    margin-bottom: 2.8rem;
+    font-size: .9rem;
     letter-spacing: unset;
   }
 }
