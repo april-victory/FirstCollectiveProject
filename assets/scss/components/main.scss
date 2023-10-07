@@ -109,17 +109,17 @@
 }
 
 .advantages__item:nth-of-type(1)::before {
-  background-image: url(/assets/icons/block2_svg1.svg);
+  background-image: url(./assets/icons/block2_svg1.svg);
   background-repeat: no-repeat;
 }
 
 .advantages__item:nth-of-type(2)::before {
-  background-image: url(/assets/icons/block2_svg2.svg);
+  background-image: url(./assets/icons/block2_svg2.svg);
   background-repeat: no-repeat;
 }
 
 .advantages__item:nth-of-type(3)::before {
-  background-image: url(/assets/icons/block2_svg3.svg);
+  background-image: url(./assets/icons/block2_svg3.svg);
   background-repeat: no-repeat;
 }
 
@@ -200,13 +200,15 @@
   overflow: hidden;
   border-radius: 1.7778rem;
   max-width: 31%;
-  max-height: 27.7778rem;
+  max-height: 27.78rem;
   flex-shrink: 0;
 }
 
 .popular__pic {
   min-width: auto;
-  max-height: 100%;
+  width: 100%;
+  min-height: 27.78rem;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -223,7 +225,7 @@
   width: 3.6111rem;
   height: 1.7778rem;
   font-weight: 700;
-  color: #1a3e3e;
+  color: $dark-green;
   background: rgba(253, 253, 253, 0.4);
   backdrop-filter: blur(0.2222rem);
 }
@@ -358,8 +360,6 @@
   object-fit: cover;
 }
 
-
-
 .news__title {
   margin: 0;
   padding: 1.1rem 0 1.3rem;
@@ -415,14 +415,10 @@
 }
 // Конец блока 4 Екатерины
 // Начало блока 5 Ксении
-*{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+
 .gallery {
   display: block;
-  background: #FDFDFD;
+  background: $white;
   margin: 0 auto;
   padding: 0 0.6rem;
   max-width: 90%;
@@ -430,22 +426,22 @@
 .heading {
   text-align: center;
   .subtitle {
-  margin: 0 0 0.5rem;
-  font-family: "NunitoSans_Regular", sans-serif;
-  color: #F2BE22;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.25px;
+    margin: 0 0 0.5rem;
+    font-family: "Nunito Sans", sans-serif;
+    color: $yellow;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.25px;
   }
   .title {
-  margin: 0 0 2.5rem;
-  font-family: "NunitoSans_Regular", sans-serif;
-  color: #18121E;
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2.375rem;
-  align-self: center;
-}
+    margin: 0 0 2.5rem;
+    font-family: "Nunito Sans", sans-serif;
+    color: $black;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.375rem;
+    align-self: center;
+  }
 }
 .photo_container {
   display: grid;
@@ -463,42 +459,35 @@
   height: 100%;
   object-fit: cover;
   filter: opacity(0.9);
-  box-shadow: inset 0 0 15px #18121E, 0 8px 15px #18121E;
+  box-shadow: inset 0 0 0.8rem $light-black, 0 0.4rem 0.8rem $light-black;
 }
 .photo_container img:hover {
   filter: opacity(1);
-  transition: .2s;
+  transition: 0.2s;
   cursor: zoom-in;
 }
-.photo1, .photo5 {
+.photo1,
+.photo5 {
   grid-column: span 6;
 }
-.photo2, .photo3, .photo4, .photo6{
+.photo2,
+.photo3,
+.photo4,
+.photo6 {
   grid-column: span 3;
 }
 a {
   text-decoration: none;
 }
 a:hover {
-  color: #FDFDFD;
+  color: $white;
   cursor: pointer;
   text-decoration: underline;
 }
 .gallery_button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "NunitoSans_Regular";
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.25px;
-  color: #FDFDFD;
-  border: 1px solid #1A3E3E;
-  border-radius: 4px;
-  width: 11.125rem;
-  height: 3.25rem;
-  background-color: #1A3E3E;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
+  width: 12.2rem;
+  height: 2.9rem;
 }
 // Конец блока 5 Ксении
 //Начало формы Виктории
@@ -516,9 +505,9 @@ a:hover {
   border-radius: 6px;
   margin-bottom: -5.4444rem;
   padding: 2.2222rem 5.5556rem;
-  box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+  box-shadow: 0 0 0.8rem 0 rgba(24, 18, 30, 0.12);
   background: $white;
-  gap: 15px;
+  gap: 0.8rem;
 }
 
 .subscription__content {
@@ -551,9 +540,13 @@ a:hover {
 .subscription__link {
   text-decoration: underline;
   font-size: 0.7778rem;
+  color: $black;
 }
 .subscription__link:visited {
-  color: $dark-green;
+  color: $black;
+}
+.subscription__link:hover {
+  color: $black;
 }
 .subscription__email {
   display: flex;
@@ -567,220 +560,244 @@ a:hover {
   padding: 0px 0.8889rem;
   width: 100%;
   border-radius: 4px;
-  border: 1px solid #f3f5f4;
-  background-color: #f3f5f4;
+  border: 1px solid $light-grey;
+  background-color: $light-grey;
   color: $black;
 }
 
 .subscription__button {
   padding: 0.6667rem 1.3333rem;
-  min-width: 240px;
+  min-width: 13.3rem;
 }
+
 //Конец формы Виктории
 
 @media screen and (max-width: 1199px) {
   // Начало блока 4 Екатерины
-.news {
-  flex: 1 1 100%;
-}
-// Конец блока 4 Екатерины
+  .news {
+    flex: 1 1 100%;
+  }
+  // Конец блока 4 Екатерины
 
-//Начало формы Виктории
-.subscription__wrapper {
-  padding: 2.2222rem;
-}
-.main__title_second-subscription {
-  font-size: 1.2rem;
-}
-//Конец формы Виктории
+  //Начало формы Виктории
+  .subscription__wrapper {
+    padding: 2.2222rem;
+  }
+  .main__title_second-subscription {
+    font-size: 1.2rem;
+  }
+  //Конец формы Виктории
 }
 
 @media screen and (max-width: 991px) {
-// Начало блока 2 Екатерины
-.camping__wrapper {
-flex-direction: column-reverse;
-padding: 4.2rem 0;
-gap: 2.2rem;
-}
+  // Начало блока 2 Екатерины
+  .camping__wrapper {
+    flex-direction: column-reverse;
+    padding: 4.2rem 0;
+    gap: 2.2rem;
+  }
 
-.offer__wrapper {
-padding: 4.2rem 0;
-}
-.offer__photo {
-justify-content: center;
-grid-template-columns: 11.1rem;
-}
-// Конец блока 2 Екатерины
+  .offer__wrapper {
+    padding: 4.2rem 0;
+  }
+  .offer__photo {
+    justify-content: center;
+    grid-template-columns: 11.1rem;
+  }
+  // Конец блока 2 Екатерины
 
-// Начало блока 3 Виктории
+  // Начало блока 3 Виктории
 
-.popular__media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .popular__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.popular__item {
-  max-width: 85%;
-}
+  .popular__item {
+    max-width: 85%;
+  }
 
-.overlay__title_second {
-  display: none;
-}
-// Конец блока 3 Виктории
+  .overlay__title_second {
+    display: none;
+  }
+  // Конец блока 3 Виктории
 
-//Начало формы Виктории
-.subscription__wrapper {
-  flex-direction: column;
-  align-items: center;
-  padding: 2.2222rem;
-}
+  //Начало формы Виктории
+  .subscription__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 2.2222rem;
+  }
 
-.subscription__content {
-  align-items: center;
-}
+  .subscription__content {
+    align-items: center;
+  }
 
-.subscription__email {
-  justify-content: space-between;
-}
-//Конец формы Виктории
+  .subscription__email {
+    justify-content: space-between;
+  }
+  //Конец формы Виктории
 }
 
 @media screen and (max-width: 768px) {
-// Начало блока 2 Екатерины
-.offer__content {
-  flex: 3;
-}
-// Конец блока 2 Екатерины
+  // Начало блока 2 Екатерины
+  .offer__content {
+    flex: 3;
+  }
+  // Конец блока 2 Екатерины
 
-//Начало формы Виктории
-.subscription__email {
-  flex-direction: column;
-}
-//Конец формы Виктории
+  //Начало формы Виктории
+  .subscription__email {
+    flex-direction: column;
+  }
+  //Конец формы Виктории
 }
 @media screen and (max-width: 575px) {
-// Начало блока 1 Екатерины
-.main__title_first {
-  font-size: 0.9rem;
-}
-.main__title_second {
-  margin-bottom: 1.8rem;
-  font-size: 1.3rem;
-}
-.main__text {
-  font-size: 0.9rem;
-}
-.camping__wrapper {
-  padding: 2.8rem 0;
-}
-.camping__media {
-  margin-right: 0;
-}
-.camping__button {
-  margin: 0 auto;
-  width: 9.8rem;
-  height: 2.4rem;
-}
-.media__main-frame {
-  margin: 1rem;
-  justify-content: center;
-}
-.media__second {
-  display: none;
-}
-// Конец блока 1 Екатерины
+  // Начало блока 1 Екатерины
+  .main__title_first {
+    font-size: 0.9rem;
+  }
+  .main__title_second {
+    margin-bottom: 1.8rem;
+    font-size: 1.3rem;
+  }
+  .main__text {
+    font-size: 0.9rem;
+  }
+  .camping__wrapper {
+    padding: 2.8rem 0;
+  }
+  .camping__media {
+    margin-right: 0;
+  }
+  .camping__button {
+    margin: 0 auto;
+    width: 9.8rem;
+    height: 2.4rem;
+  }
+  .media__main-frame {
+    margin: 1rem;
+    justify-content: center;
+  }
+  .media__second {
+    display: none;
+  }
+  // Конец блока 1 Екатерины
 
-// Начало блока 2 Екатерины
-.offer__photo {
-  display: none;
-}
-.offer__button {
-  margin: 0 auto;
-  width: 11.8rem;
-  height: 2.4rem;
-}
-// Конец блока 2 Екатерины
+  // Начало блока 2 Екатерины
+  .offer__photo {
+    display: none;
+  }
+  .offer__button {
+    margin: 0 auto;
+    width: 11.8rem;
+    height: 2.4rem;
+  }
+  // Конец блока 2 Екатерины
 
-// Начало блока 3 Виктории
-// .overlay__info {
-//   font-size: 10px;
-// }
-// Конец блока 3 Виктории
+  //Начало блока 3 Виктории
+  .popular__item {
+    max-height: 20rem;
+  }
+  //Конец блока 3 Виктории
 
-// Начало блока 4 Екатерины
-.blog {
-justify-content: center;
-}
+  // Начало блока 4 Екатерины
+  .blog {
+    justify-content: center;
+  }
 
-.news {
-  flex-direction: column;
-  padding: 0;
-  max-width: 295px;
-}
+  .news {
+    flex-direction: column;
+    padding: 0;
+    max-width: 16.4rem;
+  }
 
-.news__img-wrapper {
-padding: 0.9rem;
-margin: 0.8rem;
-}
+  .news__img-wrapper {
+    padding: 0.9rem;
+    margin: 0.8rem;
+  }
 
-.news__img {
+  .news__img {
+    width: 100%;
+    object-fit: cover;
+  }
 
-  width: 100%;
-  object-fit: cover;
-}
+  .news__content {
+    margin: 0 1.3rem;
+  }
 
-.news__content {
-margin: 0 1.3rem;
-}
+  .blog__button {
+    width: 10.9rem;
+    height: 2.4rem;
+  }
+  // Конец блока 4 Екатерины
 
-.blog__button {
-  width: 10.9rem;
-  height: 2.4rem;
-}
-// Конец блока 4 Екатерины
+  //Начало блока 5 Ксении
+  .photo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5,
+  .photo6 {
+    max-width: 23rem;
+    width: 100%;
+    min-height: auto;
+    height: 100%;
+  }
+  //Конец блока 5 Ксении
 
-//Начало формы Виктории
-.subscription__wrapper {
-  margin: 0;
-}
+  //Начало формы Виктории
+  .subscription__wrapper {
+    margin: 0;
+  }
 
-.subscription__form {
-  align-items: flex-start;
-}
+  .subscription__form {
+    align-items: flex-start;
+  }
 
-.subscription__button {
-  display: flex;
-  font-size: 0.8rem;
-  padding: 0.6667rem 1.3333rem;
-  min-width: 8.3333rem;
-}
-//Конец формы Виктории
+  .subscription__button {
+    display: flex;
+    font-size: 0.8rem;
+    padding: 0.6667rem 1.3333rem;
+    min-width: 8.3333rem;
+  }
+  //Конец формы Виктории
 }
 
 @media screen and (max-width: 410px) {
-// Начало блока 4 Екатерины
-.media__video {
-  width: 100%;
-}
-// Конец блока 4 Екатерины
+  //Начало блока 3 Виктории
+  .popular__overlay {
+    display: none;
+  }
+  //Конец блока 3 Виктории
+  // Начало блока 4 Екатерины
+  .media__video {
+    width: 100%;
+  }
+  // Конец блока 4 Екатерины
 }
 
 @media screen and (max-width: 360px) {
-// Начало блока 1 Екатерины
-.news {
-  display: none;
-}
-// Конец блока 1 Екатерины
+  // Начало блока 1 Екатерины
+  .news {
+    display: none;
+  }
+  // Конец блока 1 Екатерины
 
-//Начало формы Виктории
-.subscription__wrapper {
-  padding: 10px;
-  font-size: 14px;
-}
+  //Начало формы Виктории
+  .subscription__wrapper {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
 
-.subscription__email_wrapper {
-  width: 80%;
-}
-//Конец формы Виктории
+  .subscription__email_wrapper {
+    width: 80%;
+  }
+  //Конец формы Виктории
 }
