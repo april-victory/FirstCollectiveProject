@@ -156,7 +156,8 @@
 .offer__photo-item {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 14rem;
 }
 
 // Конец блока 2 Екатерины
@@ -356,12 +357,10 @@
 
 .news__img {
   border-radius: 6px;
-  max-width: 12.8rem;
-  max-height: 15.6rem;
   object-fit: cover;
+  height: 16rem;
+  width: 13rem;
 }
-
-
 
 .news__title {
   margin: 0;
@@ -585,6 +584,10 @@ padding: 4.2rem 0;
 justify-content: center;
 grid-template-columns: 11.1rem;
 }
+
+.offer__photo-item {
+  height: 12rem;
+}
 // Конец блока 2 Екатерины
 
 // Начало блока 3 Виктории
@@ -694,15 +697,10 @@ justify-content: center;
   max-width: 295px;
 }
 
-.news__img-wrapper {
-padding: 0.9rem;
-margin: 0.8rem;
-}
-
 .news__img {
-
   width: 100%;
   object-fit: cover;
+  border-radius: 6px 6px 0 0;
 }
 
 .news__content {
