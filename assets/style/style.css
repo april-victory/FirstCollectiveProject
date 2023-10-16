@@ -502,10 +502,15 @@ li > a:hover {
   color: #fdfdfd;
   width: 50%;
   padding-right: 8px;
+  font-size: 0.9rem;
 }
 
 .strat__choice_date::-webkit-calendar-picker-indicator {
   filter: invert(0.9);
+}
+
+.strat__choice_date:focus-visible {
+  outline: none;
 }
 
 .start__button {
@@ -903,7 +908,7 @@ li > a:hover {
   backdrop-filter: blur(0.3rem);
 }
 
-.popular__overlay:hover {
+.popular__item:hover > .popular__overlay {
   top: 0;
   cursor: pointer;
 }
@@ -1168,7 +1173,7 @@ li > a:hover {
 }
 
 .subscription__form_label-second {
-  font-size: 0.8;
+  font-size: 0.8rem;
   margin: 0.4rem 0 0;
 }
 
